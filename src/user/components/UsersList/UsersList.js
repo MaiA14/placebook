@@ -6,12 +6,12 @@ import UserItem from '../UserItem/UserItem';
 
 
 const UsersList = (props) => {
-    if (props.users.length === 0) {
+    if (props.items.length === 0) {
         return <Card className="center">No users found</Card>
     };
 
     return <ul className="users-list">
-        {props.users.map(user => {
+        {props.items.map(user => {
             return <UserItem
                 key={user.id}
                 image={user.image}
