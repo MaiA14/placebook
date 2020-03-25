@@ -6,7 +6,8 @@ import './PlaceList.css';
 
 import PlaceItem from '../PlaceItem/PlaceItem';
 
-const PlaceList = props => {
+
+const PlaceList = (props) => {
     if (props.items.length === 0) {
         return (
             <div className="place-list center">
@@ -35,5 +36,6 @@ const PlaceList = props => {
         </ul>
     );
 };
+
 
 export default PlaceList;
