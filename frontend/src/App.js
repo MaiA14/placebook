@@ -50,7 +50,7 @@ const App = () => {
       <Router>
         <main>
           <MainNavigation />
-            {routes}
+          {routes}
         </main>
       </Router>
     </AuthContext.Provider>
