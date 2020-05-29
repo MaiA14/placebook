@@ -56,7 +56,7 @@ const ImageUpload = (props) => {
           {!previewUrl && <p>Please pick an image.</p>}
         </div>
         <Button type="button" onClick={pickImageHandler}>
-          Pick image
+          PICK IMAGE
         </Button>
       </div>
       {!isValid && <p>{props.errorText}</p>}
