@@ -46,7 +46,7 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || 'An unknown error occurred!' });
 });
 
-mongoose.connect('mongodb+srv://maiaa1993:12341234m@cluster0-lnrfd.mongodb.net/places_db?retryWrites=true&w=majority')
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0-lnrfd.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
   .then(() => {
     app.listen(5000);
   })
